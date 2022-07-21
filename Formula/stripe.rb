@@ -7,7 +7,7 @@
 class Stripe < Formula
   desc "Stripe CLI utility"
   homepage "https://stripe.com"
-  version "1.8.1"
+  version "1.10.3"
 
   if OS.mac?
     if Hardware::CPU.intel?
@@ -18,8 +18,8 @@ class Stripe < Formula
       sha256 "f97c4b71f77ea2bde4cd8f5e020270d6ff6db7834a2313b93d24e31b375f801b"
     end
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/stripe/stripe-cli/releases/download/v1.8.1/stripe_1.8.1_linux_x86_64.tar.gz"
-    sha256 "224948411300d9e5c5d626eefe3f48de69b4be2c07bc8458fc1e84f4d1b44fdb"
+    url "https://github.com/stripe/stripe-cli/releases/download/v1.10.3/stripe_1.10.3_linux_x86_64.tar.gz"
+    #sha256 "224948411300d9e5c5d626eefe3f48de69b4be2c07bc8458fc1e84f4d1b44fdb"
   end
 
   def install
